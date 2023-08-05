@@ -43,8 +43,6 @@ a{
 .wrapper{
     display:flex ;
     flex-direction: column;
-    
-    
     width: 90% ;
     min-height: 120%;
     margin:0 auto ;
@@ -150,8 +148,16 @@ elsewhere  */
 /* below is all showcase css*/
 
 .spacer{
+    display:flex ;
     height: 40px ;
+    margin:0 auto ;
+    align-items: center;
+    text-align: center;
 }
+
+
+ 
+
 
 
 /* have to set the show  case to flex */
@@ -271,7 +277,7 @@ display:flex ;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height:40px ;
+    height:79px ;
      
 }
 
