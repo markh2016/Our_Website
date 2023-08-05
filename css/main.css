@@ -8,7 +8,7 @@ padding : 0 ;
 }
 
 body{
-    min-height: 100vh;
+    height: 100%;
     font-family:"Roboto",'Times New Roman', Times, serif ;
     background: rgb(19, 133, 226);
 }
@@ -38,6 +38,22 @@ a{
     font-family: "Lato", 'Arial Narrow', Arial, sans-serif ;
     font-size:1.2rem ;
 }   
+
+.wrapper{
+    display:flex ;
+    flex-direction: column;
+    
+    
+    width: 90% ;
+    height:100vh ;
+    margin:0 auto ;
+    background:white ;
+}
+
+
+
+
+
 
 
 .navbar{
@@ -116,7 +132,7 @@ elsewhere  */
    display: none ;
    cursor: pointer;
    position:absolute ;
-   right:40px ;
+   right:60px ;
 
 }
 
@@ -143,26 +159,10 @@ elsewhere  */
 margin :0 auto ;
 display:flex ;
 
+
 }
     
- .grid > div{
-    display :grid ;
-    grid-template-rows: 3fr 1fr;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height:380px;
-    width: 290px ;
-    color:var(--linkcolors);
-    border-radius: 10px;
-    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
  
-}  
-
-
  .grid{
   display: grid;  
   margin:0 auto ;
@@ -175,10 +175,78 @@ display:flex ;
  
 }
 
+/*  Addresses all child divs */
+
+.grid > div{
+    display :grid ;
+    
+    grid-template-rows: 60% 30% 30%;
+    border:var(--border) ;
+   
+ 
+    text-align: center;
+    height:200px;
+    width: 250px ;
+    color:var(--linkcolors);
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    margin:5px 10px ;
+}  
+
+
 .showcase-1 { 
     background: red;
     grid-area: Advert-1;
+    padding :10px ;
+    height: 260px;
    
+}
+
+.showcase-1 .sh-case-dv1{
+    display:grid ;
+    margin:0 auto ;
+    grid-template-columns:1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "images"
+    "itemtext"
+    "gui"
+    ;
+  
+    width: 100% ;
+    
+    
+    row-gap: 3px;
+    
+
+
+}
+
+.sh-case-images {
+ margin:0 auto ;
+ grid-area: images;
+ width:80% ;
+ padding:5px ;
+ background:white ;
+ border-radius: 10px ;
+
+}
+
+.item-text{
+    grid-area: itemtext ;
+}
+
+.mbuttons{
+    grid-area:gui ;
+    margin:0 auto ;
+
+    width: 80% ;
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+ 
 }
 
 .showcase-2{ 
@@ -194,53 +262,31 @@ display:flex ;
 
 }
 
-.sh-case-dv1{
-    display:grid ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8fr 2fr ;
-    margin-top: 20px;
-    padding:5px ;
+.page-footer {
     
-    height:250px;
-    width: 250px ;
-    background-color: aliceblue;
-    align-items: center;
-}
-
-.sh-case-images{
-   
-    width:100% ;
-    height:auto ;
-
-
-}
-
-.show-case .item-text{
-    color:black
-}
-
-.showcase-1 .btn{
     display:flex ;
+    margin-top: auto;
+    background:var(--navcolor) ;
+    align-items: center;
     justify-content: center;
-    margin:0 auto ;
-   
-    width: 200px ;
-    height:50px ;
-   
+    text-align: center;
+    height:40px ;
+     
 }
 
-.showcase-1 .buttons {
-    width:100% ;
-    font-size: 0.96em;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
- 
+.page-footer > div
+{   
+    color:white ;
 }
 
 /* media queries */
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 935px) {
+
+    .wrapper{
+        min-height: 100vw;
+    }
+
    .burger {
     display:block ; 
    }
