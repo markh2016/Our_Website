@@ -152,11 +152,14 @@ elsewhere  */
 /* below is all showcase css*/
 
 .spacer{
-    display:flex ;
+    
+    margin-top: 100px;
     height: 40px ;
-    margin:0 auto ;
+   
     align-items: center;
     text-align: center;
+   
+  
 }
 
 
@@ -167,8 +170,8 @@ elsewhere  */
 /* have to set the show  case to flex */
 /* then to center */
 .show-case{
-    margin-top: 100px;
-display:flex ;
+    margin-top: 30px ;
+    display:flex ;
 
 
 }
