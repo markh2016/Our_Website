@@ -218,27 +218,9 @@ elsewhere  */
    
 }
 
+
+.showcase-1 .sh-case-dv,
 .showcase-2 .sh-case-dv{
-    display:grid ;
-    margin:0 auto ;
-    grid-template-columns:1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: 
-    "images"
-    "itemtext"
-    "gui"
-    ;
-  
-    width: 100% ;
-    
-    
-    row-gap: 20px;
-    
-
-
-}
-
-.showcase-1 .sh-case-dv{
     display:grid ;
     margin:0 auto ;
     grid-template-columns:1fr;
